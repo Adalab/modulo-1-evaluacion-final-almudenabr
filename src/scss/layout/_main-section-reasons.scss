@@ -1,3 +1,44 @@
-.reasons {
-  background: chartreuse;
+.section2 {
+  background: $color-iceblue;
+  padding-bottom: 60px;
+
+  &__title {
+    background: crimson;
+    text-align: center;
+    font-family: $font-title;
+    text-transform: capitalize;
+    padding-top: 30px;
+    padding-bottom: 45px;
+
+    &__article {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 93px 93px 93px;
+      grid-row-gap: 45px;
+      grid-template-areas: "ut" "curabitur" "morbi";
+      // align-content: center;
+
+      &__art1 {
+        grid-area: ut;
+      }
+      &__art2 {
+        grid-area: curabitur;
+      }
+      &__art3 {
+        grid-area: morbi;
+      }
+      &__art1,
+      &__art2,
+      &__art3 {
+        text-align: center;
+        font-size: 1.125rem; //18px
+        &--title {
+          font-family: $font-title;
+        }
+        &--text {
+          font-family: $font-main;
+        }
+      }
+    }
+  }
 }
