@@ -1,3 +1,41 @@
 .section1 {
   background: grey;
+  margin-left: 15px;
+  margin-bottom: 45px;
+  line-height: 30px;
+
+  &__insomnia {
+    margin-top: 30px;
+    font-size: 0.875rem; //14px
+    color: $color-lightblue;
+    font-family: $font-main;
+    text-transform: capitalize;
+  }
+  &__title {
+    font-family: $font-title;
+    text-transform: capitalize;
+    font-size: 1.5rem; //24px
+  }
+  &__text {
+    font-family: $font-main;
+    font-size: 1.125rem; //18px
+    color: #4a4a4a;
+  }
+  &__link {
+    background: $color-white;
+    width: 76px;
+    border-radius: 25px;
+    border: $color-orange solid;
+    margin-top: 30px;
+    text-align: center;
+
+    &--button {
+      text-decoration: none;
+      color: $color-orange;
+      font-size: 1.25rem; //20px
+      font-family: $font-main;
+      line-height: 45px;
+      height: 45px;
+    }
+  }
 }
