@@ -1,5 +1,44 @@
-.page__header {
+.header {
+  background: orange;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__hero {
+    background: red;
+    height: 100vh;
+    // width: 100%;
+    overflow: hidden;
+  }
+
+  &__linkmenu {
+    background: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+  }
+
+  &__text {
+    background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    //   width: 290px;
+    //   transform: translate(0, -189px);
+    //   z-index: 500;
+    //   color: $color-white;
+
+    //   &--title {
+    //     text-transform: uppercase;
+    //     font-family: $font-main;
+    //     font-weight: bold;
+    //     font-size: 2.625rem; //42px//
+    //     line-height: 42px;
+    //     height: 110px;
+    //   }
+  }
 }
