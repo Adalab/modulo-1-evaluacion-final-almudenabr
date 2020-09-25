@@ -6,7 +6,7 @@
   background-image: url(../images/cover.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: 300%; //tamaño ok pero no 100vh
+  background-size: 300%; //tamaño img ok pero no 100vh
   background-size: cover;
   height: 100vh;
 
@@ -25,15 +25,12 @@
   }
 
   &__text {
-    // background: green;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 290px;
     margin-top: 284px;
-    // margin-bottom: 174px;
-    // height: 110px;
     color: $color-white;
 
     &--title {
@@ -55,15 +52,9 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 45px;
-    margin-bottom: 53px;
-    position: relative;
-
-    &--img {
-      transform: translate(50% 50%);
-      position: absolute;
-      top: 16.65px;
-      left: 12.5px;
-    }
   }
 }
