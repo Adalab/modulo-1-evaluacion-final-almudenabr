@@ -1,11 +1,11 @@
 .section1 {
-  background: grey;
   margin-left: 15px;
   margin-bottom: 45px;
   line-height: 30px;
 
   &__insomnia {
     margin-top: 30px;
+    margin-bottom: 1px;
     font-size: 0.875rem; //14px
     color: $color-lightblue;
     font-family: $font-main;
@@ -16,18 +16,19 @@
     font-family: $font-title;
     text-transform: capitalize;
     font-size: 1.5rem; //24px
+    margin-bottom: 15px;
   }
   &__text {
     font-family: $font-main;
     font-weight: 400;
     font-size: 1.125rem; //18px
-    color: #4a4a4a;
+    color: $color-text-section1;
   }
   &__link {
     background: $color-white;
     width: 76px;
     border-radius: 25px;
-    border: $color-orange solid;
+    border: 2px solid $color-orange;
     margin-top: 30px;
     text-align: center;
 
@@ -39,6 +40,46 @@
       font-weight: 500;
       line-height: 45px;
       height: 45px;
+    }
+  }
+}
+@media all and (min-width: 768px) {
+  .section1 {
+    margin: 0 39px 60px 39px;
+
+    &__title {
+      font-size: 1.625rem; //26px
+    }
+    &__text {
+      font-size: 1.25rem; //20px
+    }
+    &__link {
+      width: 91px;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .section1 {
+    margin: 60px 275px;
+
+    &__insomnia {
+      font-size: 1rem; //16px
+      font-weight: 400;
+    }
+
+    &__title {
+      font-size: 2rem; //32px
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-family: $font-main;
+      font-weight: 400;
+      font-size: 1.25rem; //20px
+    }
+    &__link {
+      width: 160px;
+      border-radius: 25px;
     }
   }
 }
