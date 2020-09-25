@@ -14,25 +14,28 @@
   &__articlesBox {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 93px 93px 93px;
+    grid-template-rows: 93px 93px 93px 45px;
     grid-row-gap: 45px;
-    // grid-template-areas: "ut" "curabitur" "morbi";
+    grid-template-areas: "ut" "curabitur" "morbi" "more";
     line-height: 30px;
 
-    // align-content: center;
+    &__art1 {
+      grid-area: ut;
+    }
+    &__art2 {
+      grid-area: curabitur;
+    }
+    &__art3 {
+      grid-area: morbi;
+    }
+    &__button {
+      grid-area: more;
+    }
 
-    // &__art1 {
-    //   grid-area: ut;
-    // }
-    // &__art2 {
-    //   grid-area: curabitur;
-    // }
-    // &__art3 {
-    //   grid-area: morbi;
-    // }
     &__art1,
     &__art2,
-    &__art3 {
+    &__art3,
+    &__button {
       width: 180px;
       text-align: center;
       font-size: 1.125rem; //18px
@@ -43,6 +46,23 @@
       }
       &--text {
         font-family: $font-main;
+        font-weight: 400;
+      }
+    }
+
+    &__button {
+      background: $color-orange;
+      width: 184px;
+      // height: 45px; //no es necesaria por haberle dado line-heigth 45px
+      border-radius: 22.5px;
+
+      &--link {
+        color: #ffffff;
+        text-decoration: none;
+        font-family: $font-main;
+        font-weight: 500;
+        line-height: 45px;
+        padding: 10px;
       }
     }
   }
