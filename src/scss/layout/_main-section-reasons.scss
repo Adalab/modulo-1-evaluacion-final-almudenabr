@@ -9,35 +9,40 @@
     text-transform: capitalize;
     padding-top: 30px;
     padding-bottom: 45px;
+  }
 
-    &__article {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 93px 93px 93px;
-      grid-row-gap: 45px;
-      grid-template-areas: "ut" "curabitur" "morbi";
-      // align-content: center;
+  &__articlesBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 93px 93px 93px;
+    grid-row-gap: 45px;
+    // grid-template-areas: "ut" "curabitur" "morbi";
+    line-height: 30px;
 
-      &__art1 {
-        grid-area: ut;
+    // align-content: center;
+
+    // &__art1 {
+    //   grid-area: ut;
+    // }
+    // &__art2 {
+    //   grid-area: curabitur;
+    // }
+    // &__art3 {
+    //   grid-area: morbi;
+    // }
+    &__art1,
+    &__art2,
+    &__art3 {
+      width: 180px;
+      text-align: center;
+      font-size: 1.125rem; //18px
+      align-self: center; // para grid = align-items en flex
+      justify-self: center; // para grid = justify-content en flex
+      &--title {
+        font-family: $font-title;
       }
-      &__art2 {
-        grid-area: curabitur;
-      }
-      &__art3 {
-        grid-area: morbi;
-      }
-      &__art1,
-      &__art2,
-      &__art3 {
-        text-align: center;
-        font-size: 1.125rem; //18px
-        &--title {
-          font-family: $font-title;
-        }
-        &--text {
-          font-family: $font-main;
-        }
+      &--text {
+        font-family: $font-main;
       }
     }
   }
