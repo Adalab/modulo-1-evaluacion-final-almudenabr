@@ -1,5 +1,4 @@
 .header {
-  background: orange;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,15 +28,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 290px;
+    // width: 290px;
     margin-top: 284px;
     color: $color-white;
 
     &--title {
       text-align: center;
       text-transform: uppercase;
-      // font-family: $font-main;
-      font-weight: bold;
       font-size: 2.625rem; //42px//
       font-family: $font-title;
       line-height: 55px;
@@ -56,5 +53,24 @@
     justify-content: center;
     align-items: center;
     margin-top: 45px;
+  }
+}
+@media all and (min-width: 768px) {
+  .header {
+    &__text {
+      margin-top: 384px;
+
+      &--title {
+        font-size: 5rem; //80px
+        line-height: 106px;
+      }
+      &--paragraph {
+        margin-top: 10px;
+        font-size: 1.5rem; //24px
+      }
+    }
+    &__arrow {
+      margin-top: 30px;
+    }
   }
 }
