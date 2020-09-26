@@ -57,6 +57,9 @@
       justify-content: center;
       align-items: center;
       margin-top: 45px;
+      &:hover {
+        animation: moveArrow 1s; //@keyframes está en el footer
+      }
       &--link {
         padding: 6px;
       }
