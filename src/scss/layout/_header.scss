@@ -1,10 +1,11 @@
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   background-image: url(../images/cover.jpg);
   background-position: top center;
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   // background-size: 300%; //tamaño img ok pero no 100vh
   background-size: cover;
   height: 100vh;
@@ -28,7 +29,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 284px;
+    width: 290px;
+    margin-bottom: 53px;
     color: $color-white;
 
     &--title {
@@ -42,48 +44,31 @@
       margin-top: 10px;
       font-family: $font-main;
     }
-  }
-  &__arrow {
-    background-color: $color-white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 45px;
-  }
-}
-@media all and (min-width: 768px) {
-  .header {
-    &__text {
-      margin-top: 384px;
 
-      &--title {
-        font-size: 5rem; //80px
-        line-height: 106px;
-      }
-      &--paragraph {
-        margin-top: 10px;
-        font-size: 1.5rem; //24px
-      }
-    }
-    &__arrow {
-      margin-top: 30px;
+    &--arrow {
+      background-color: $color-white;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 45px;
     }
   }
 }
 @media all and (min-width: 768px) {
   .header {
     &__text {
-      margin-top: 384px;
+      width: 690px;
+      margin-bottom: 45px;
 
       &--title {
         font-size: 5rem; //80px
         line-height: 106px;
       }
       &--paragraph {
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 1.5rem; //24px
       }
     }
@@ -96,6 +81,7 @@
   .header {
     &__text {
       width: 730px;
+      margin-bottom: 13px;
 
       &--title {
         font-size: 6.25rem; //100px
