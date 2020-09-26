@@ -64,7 +64,6 @@
 
     &__insomnia {
       font-size: 1rem; //16px
-      font-weight: 400;
     }
 
     &__title {
@@ -73,13 +72,10 @@
     }
 
     &__text {
-      font-family: $font-main;
-      font-weight: 400;
       font-size: 1.25rem; //20px
     }
     &__link {
       width: 160px;
-      border-radius: 25px;
     }
   }
 }
