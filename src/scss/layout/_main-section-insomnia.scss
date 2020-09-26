@@ -31,6 +31,11 @@
     border: 2px solid $color-orange;
     margin-top: 30px;
     text-align: center;
+    transition: background-color ease 2s;
+    &:hover {
+      background: $color-orange;
+      border-radius: 50%;
+    }
 
     &--button {
       text-decoration: none;
@@ -40,6 +45,10 @@
       font-weight: 500;
       line-height: 45px;
       height: 45px;
+      padding: 10px 20px;
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 }
@@ -55,6 +64,9 @@
     }
     &__link {
       width: 91px;
+      &--button {
+        padding: 10px 30px;
+      }
     }
   }
 }
@@ -76,6 +88,9 @@
     }
     &__link {
       width: 160px;
+      &--button {
+        padding: 10px 66px;
+      }
     }
   }
 }
